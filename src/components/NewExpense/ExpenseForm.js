@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './ExpenseForm.css';
-function ExpenseForm() {
+function ExpenseForm(props) {
     // Using many states
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
@@ -55,7 +55,7 @@ function ExpenseForm() {
             amount: enteredAmount,
             date: new Date(enteredDate)
         }
-        console.log(expenseData);
+        props.onSaveExpenseData(expenseData);
         //After logging the user's data, set the fields to empty
         //This clears the input form
         setEnteredTitle('');
