@@ -56,21 +56,38 @@ function ExpenseForm() {
             date: new Date(enteredDate)
         }
         console.log(expenseData);
+        //After logging the user's data, set the fields to empty
+        //This clears the input form
+        setEnteredTitle('');
+        setEnteredAmount('');
+        setEnteredDate('');
     }
 
     return <form onSubmit={submitHandler}>
         <div className='new-expense__controls'>
             <div className='new-expense__control'>
                 <label>Title</label>
-                <input type="text" onChange={titleChangeHandler} />
+                <input 
+                type="text" 
+                //Pass the state back to the form alongside with listening to user's inputs
+                value={enteredTitle} 
+                onChange={titleChangeHandler} />
             </div>
             <div className='new-expense__control'>
                 <label>Amount</label>
-                <input type="number" onChange={amountChangeHandler} min='0.01' step='0.01' />
+                <input 
+                type="number" 
+                value={enteredAmount}
+                onChange={amountChangeHandler} 
+                min='0.01' step='0.01' />
             </div>
             <div className='new-expense__control'>
                 <label>Date</label>
-                <input type="date" onChange={dateChangeHandler} min="2019-01-01" max="2022-12-31" />
+                <input 
+                type="date" 
+                value={enteredDate}
+                onChange={dateChangeHandler} 
+                min="2019-01-01" max="2022-12-31" />
             </div>
             <div className='new-expense__actions'>
                 <button type='submit'>Add Expense</button>
