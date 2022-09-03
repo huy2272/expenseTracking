@@ -5,27 +5,27 @@ import React, { useState } from 'react';
 const initExpenses = [
   {
     id: 'e1',
-    title: 'Toilet Paper',
-    amount: 94.12,
-    date: new Date(2020, 7, 14),
+    title: 'Logitech G305',
+    amount: 69.19,
+    date: new Date(2022, 9, 2)
   },
   {
     id: 'e2',
-    title: 'New TV',
-    amount: 799.49,
-    date: new Date(2021, 2, 12)
+    title: 'Nike Blazers Low',
+    amount: 135,
+    date: new Date(2022, 9, 2)
   },
   {
     id: 'e3',
-    title: 'Car Insurance',
-    amount: 294.67,
-    date: new Date(2021, 2, 28),
+    title: 'Gym Membership',
+    amount: 29.86,
+    date: new Date(2022, 8, 25),
   },
   {
     id: 'e4',
-    title: 'New Desk (Wooden)',
-    amount: 450,
-    date: new Date(2021, 5, 12),
+    title: 'New Monitor',
+    amount: 526.58,
+    date: new Date(2021, 10, 13),
   },
 ];
 
