@@ -1,5 +1,6 @@
 import './Expenses.css';
-import ExpenseItem from './ExpenseItem';
+import './ExpensesList.css'
+import ExpensesList from './ExpensesList'
 import Card from '../UI/Card';
 import ExpensesFilter from './ExpensesFilter';
 import React, { useState } from 'react';
@@ -18,21 +19,13 @@ function Expenses(props) {
         return expense.date.getFullYear().toString() === filteredYear;
     });
 
+
     //Now the filteredExpenses in return will only contain items from the specified year
     return (
         <div>
             <Card className='expenses'>
                 <ExpensesFilter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-                {filteredExpenses.map((expense) => (
-                <ExpenseItem 
-                //By adding a key we avoid bugs 
-                //and React will not have to go through each element in arr
-                key={expense.id}
-                title={expense.title} 
-                amount={expense.amount}
-                date={expense.date}
-                />
-                ))}
+                <ExpensesList items={filteredExpenses}/>
             </Card>
         </div>
 
