@@ -10,5 +10,6 @@ Using the terminal, cd to the repo folder and type "npx create-react-app"
 
 Using the terminal, type "npm start"
 
-Description
+### Description
+
 This website allows users to add expenses (name, amount and date) and have the amount display on a chart
