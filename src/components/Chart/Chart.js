@@ -6,7 +6,7 @@ import './Chart.css';
 function Chart(props) {
 
     const dataPointsValues = props.dataPoints.map(dataPoints => dataPoints.value);
-    //Max only take a list therefore we are using '...' operators to pull out all the arr elements and add them as standalone arguements
+    //Max only take a list therefore we are using '...' operators to pull out all the arr elements and add them as standalone arguments
     const totMax = Math.max(...dataPointsValues);
 
     return(
