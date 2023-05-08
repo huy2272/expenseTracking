@@ -1,4 +1,5 @@
 import PaymentForm from './PaymentForm';
+import './NewPayment.css';
 import React, { useState } from 'react';
 
 function NewPayment() {

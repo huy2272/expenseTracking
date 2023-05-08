@@ -5,7 +5,6 @@ function ExpenseForm(props) {
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
-
     //or using just one
     // const [userInput, setUserInput] = useState({
     //     enteredTitle: '',
@@ -67,27 +66,27 @@ function ExpenseForm(props) {
         <div className='new-expense__controls'>
             <div className='new-expense__control'>
                 <label>Title</label>
-                <input 
-                type="text" 
-                //Pass the state back to the form alongside with listening to user's inputs
-                value={enteredTitle} 
-                onChange={titleChangeHandler} />
+                <input
+                    type="text"
+                    //Pass the state back to the form alongside with listening to user's inputs
+                    value={enteredTitle}
+                    onChange={titleChangeHandler} />
             </div>
             <div className='new-expense__control'>
                 <label>Amount</label>
-                <input 
-                type="number" 
-                value={enteredAmount}
-                onChange={amountChangeHandler} 
-                min='0.01' step='0.01' />
+                <input
+                    type="number"
+                    value={enteredAmount}
+                    onChange={amountChangeHandler}
+                    min='0.01' step='0.01' />
             </div>
             <div className='new-expense__control'>
                 <label>Date</label>
-                <input 
-                type="date" 
-                value={enteredDate}
-                onChange={dateChangeHandler} 
-                min="2019-01-01" max="2022-12-31" />
+                <input
+                    type="date"
+                    value={enteredDate}
+                    onChange={dateChangeHandler}
+                    min="2019-01-01" max="2022-12-31" />
             </div>
             <div className='new-expense__actions'>
                 <button type='button' onClick={props.onCancel}>Cancel</button>
