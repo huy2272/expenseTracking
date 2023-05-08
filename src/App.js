@@ -1,6 +1,7 @@
 import Expenses from './components/Expenses/Expenses';
 import NewExpense from './components/NewExpense/NewExpense';
 import React, { useState } from 'react';
+import NewPayment from './components/RBC_API/DownPayment/NewPayment';
 
 const initExpenses = [
   {
@@ -42,6 +43,7 @@ function App() {
   return (
     <div>
       <NewExpense onAddExpense={addExpenseHandler} />
+      <NewPayment />
       <Expenses items={expenses} />
     </div>
   );
