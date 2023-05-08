@@ -1,6 +1,8 @@
 # expenseTracking
 Using React.js this project aims to build a website to track user expenses.
 
+To easier maintain this project in the future, it will be rewritten using TypeScipt.
+
 ### New features (coming soon)
 Users will be able to calculate the minimum down payment needed for their home
 
