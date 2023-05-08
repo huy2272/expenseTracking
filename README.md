@@ -1,6 +1,13 @@
 # expenseTracking
 Using React.js this project aims to build a website to track user expenses.
 
+### New features (coming soon)
+Users will be able to calculate the minimum down payment needed for their home
+
+Users will be able to see the amortization schedule for their repayment plan
+
+New website will be hosted on a public server
+
 ### Local set-up Instructions
 Setup steps:
 
